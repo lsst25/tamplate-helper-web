@@ -11,5 +11,6 @@
     <orderEntry type="library" name="docxtemplater" level="application" />
     <orderEntry type="library" name="pizzip" level="application" />
     <orderEntry type="library" name="FileSaver.js" level="application" />
+    <orderEntry type="library" name="bootstrap" level="application" />
   </component>
 </module>

@@ -1,0 +1,43 @@
+<html lang="en">
+<body>
+<form>
+    <h1>Birthday card generator</h1>
+    <fieldset>
+        <legend>Input a name:</legend>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Name" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Select a gender:</legend>
+
+        <div>
+            <input type="radio" id="male" name="gender" value="male"
+                   checked>
+            <label for="male">Male</label>
+        </div>
+
+        <div>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+    </fieldset>
+    <button type="submit">Generate a birthday card</button>
+</form>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/docxtemplater/3.31.2/docxtemplater.js"></script>
+<script src="https://unpkg.com/pizzip@3.1.1/dist/pizzip.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+<script src="https://unpkg.com/pizzip@3.1.1/dist/pizzip-utils.js"></script>
+<!--
+Mandatory in IE 6, 7, 8 and 9.
+-->
+<!--[if IE]>
+<script
+        type="text/javascript"
+        src="https://unpkg.com/pizzip@3.1.1/dist/pizzip-utils-ie.js"
+></script>
+<![endif]-->
+<script src="app.js"></script>
+</html>

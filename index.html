@@ -13,14 +13,21 @@
 <body>
 <nav class="navbar bg-primary">
     <div class="container-fluid d-flex justify-content-center">
-        <span class="navbar-brand mb-0 h1 text-light fw-bolder">Birthday card generator</span>
+        <span class="navbar-brand mb-0 h1 text-light fw-bolder">Happy card generator</span>
     </div>
 </nav>
 <div class="container-fluid col-md-10 col-lg-8">
     <div class="row justify-content-center">
 
         <form class="d-grid col-12 col-md-8 mt-3">
-            <fieldset class="input-group">
+            <fieldset class="input-group mb-3">
+                <legend class="form-label">Select card type:</legend>
+                <select class="form-select" id="card-type">
+                    <option value="birthday">Birthday</option>
+                    <option value="anniversary">Anniversary</option>
+                </select>
+            </fieldset>
+            <fieldset class="input-group mb-3">
                 <legend>Input a name:</legend>
                 <div class="d-grid col-12 ">
                     <input class="form-control"
@@ -33,7 +40,7 @@
 
             </fieldset>
 
-            <fieldset class="mb-3">
+            <fieldset class="mb-3 gender-fieldset">
                 <legend>Select a gender:</legend>
 
                 <div class="d-flex flex-row gap-3">
@@ -50,8 +57,25 @@
                 </div>
 
             </fieldset>
+
+            </fieldset>
+
+            <fieldset class="mb-3 years-fieldset" style="display: none">
+                <legend>Select number of years:</legend>
+
+                <input class="form-control form-control-sm w-25"
+                       id="years"
+                       name="years"
+                       type="number"
+                       min="1" max="9"
+                       value="1"
+                       required>
+
+
+            </fieldset>
+
             <div class="d-grid col-12">
-                <button class="btn btn-primary" type="submit">Generate a birthday card</button>
+                <button class="btn btn-primary" type="submit">Generate a card</button>
             </div>
         </form>
 
